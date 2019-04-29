@@ -5,8 +5,10 @@
 使用方式：
 调用安装Apk的方法 传入路径即可
 
+
 #### Unity端 调用说明
-`#region 安装APK的Library
+```
+#region 安装APK的Library
 private bool isInitMyInstallApkLibrary = false;
 private AndroidJavaObject myInstallApkLibrary;
 
@@ -32,4 +34,5 @@ public void MyInstallApkLibrary(string path)
     myInstallApkLibrary.Call("installApk", path);
 #endif
 }
-#endregion`
+#endregion
+```
