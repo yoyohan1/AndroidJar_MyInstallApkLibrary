@@ -21,9 +21,9 @@ public class MainActivity {
         return instance;
     }
 
-    public void InitCompareApi(Context context) {
+    public void InitContext(Context context) {
         mContext = context;
-        Log.i("Unity", "InitCompareApi mContext：" + mContext.getPackageName());
+        Log.i("Unity", "InitContext mContext：" + mContext.getPackageName());
     }
 
     public void installApk(String path) {
@@ -37,7 +37,7 @@ public class MainActivity {
 
         if (Build.VERSION.SDK_INT >= 24) { //Android 7.0及以上
             // 参数2 清单文件中provider节点里面的authorities ; 参数3  共享的文件,即apk包的file类
-            Uri apkUri = FileProvider.getUriForFile(mContext, "com.YouLu.AR.Android.fileprovider", file);//记住修改包名
+            Uri apkUri = FileProvider.getUriForFile(mContext, "com.zhijianar.yinmi.fileprovider", file);//记住修改包名
 
             //对目标应用临时授权该Uri所代表的文件
             intent.addFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION);
