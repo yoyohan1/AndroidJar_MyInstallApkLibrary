@@ -1,6 +1,6 @@
 # AndroidJar_MyInstallApkLibrary
 我自制的安装APK的Jar包  
-注意：使用时需要替换该代码中的包名 才可正常使用。  
+注意：测试过 不用替换该代码中的包名就可以正常使用。  
 下面是Unity端调用代码示例
 ```
 #region 安装APK的代码
