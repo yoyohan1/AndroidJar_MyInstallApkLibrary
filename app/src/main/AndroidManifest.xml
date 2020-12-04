@@ -5,7 +5,7 @@
         <activity android:name="com.example.myinstallapk.MainActivity" />
         <provider
             android:name="android.support.v4.content.FileProvider"
-            android:authorities="com.zhijianar.yinmi.fileprovider"
+            android:authorities="${applicationId}.fileprovider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
